@@ -1,0 +1,57 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; /*чтобы растянуть по ширине блок*/
+    color: #fff;
+    background-color: #392350;
+  }
+  
+  .header__container {
+    padding: 19px 0;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navigation__list {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      justify-content: flex-end;
+      transition: color 0.3s ease-in-out;
+    }
+  
+    .navigation__link{
+      align-self: center;
+    }
+    
+    .navigation__link:hover {
+      color:  #C6B6D7;
+    }
+  
+    .login_btn {
+      justify-self: end;
+    display: flex;
+    align-items: center;
+    }
+  
+    .login_link {
+      margin-right: 5px;
+    } 
+
+    @media (max-width: 768px) {
+      .header__container {
+         grid-template-columns: 1fr;
+    }
+
+    .navigation__list {
+      justify-content: center;
+    }
+
+    .header__logo {
+      display: block;
+      margin: 0 auto;
+    }
+      }

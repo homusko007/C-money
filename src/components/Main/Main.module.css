@@ -1,0 +1,13 @@
+.main {
+    background-color: #210B36;
+    padding-top: 78px;
+    padding-bottom: 30px;
+    min-height: 100%;
+    flex: 1 1 auto; /*прижимаем футер*/
+  }
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 118px;
+  }
+}

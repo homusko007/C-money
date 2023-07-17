@@ -1,0 +1,175 @@
+.account__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 70px;
+  padding-top: 78px;
+}
+
+.account__info {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  gap: 20px;
+}
+
+.acount__number,
+.account__number span {
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 10px;
+  background: linear-gradient(
+    87.4deg,
+    #2e00b1 -11.74%,
+    #8100bd 48.81%,
+    #a400be 113.27%
+  );
+  transition: background-color 0.3s ease-in-out, border-color 0.2s ease-in-uot;
+}
+
+.hero__btn {
+  height: 49px;
+  padding: 12px 30px;
+}
+
+.button:hover {
+  background: linear-gradient(
+    88.2deg,
+    #a400be -14.85%,
+    #8100bd 50.2%,
+    #2e00b1 115.25%,
+    #2e00b1 115.25%
+  );
+}
+
+.button:focus {
+  background: linear-gradient(
+    88.2deg,
+    #2e00b1 -14.85%,
+    #a400be 50.2%,
+    #2e00b1 115.25%,
+    #2e00b1 115.25%
+  );
+}
+
+.button:active {
+  background: #2e00b1;
+}
+
+.hero__btn svg {
+  margin-right: 10px;
+}
+.preloader {
+  align-items: center;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.account__chart_wrap {
+  background: #392350;
+  border-radius: 10px;
+  padding: 21px 20px;
+  width: 580px;
+}
+
+.account__chart_sort {
+  display: flex;
+  justify-content: space-between;
+}
+.account__chart_title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  padding-bottom: 20px;
+}
+
+.account__chart_select {
+  background: #392350;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #c6b6d7;
+  border: 2px transparent;
+  outline: transparent;
+}
+
+option {
+  background-color: inherit
+}
+
+.chart__message {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.account__info {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  gap: 20px;
+}
+
+.account__transfers_title {
+  font-family: "Comfortaa", cursive;
+  grid-column: 2 / 3;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+}
+
+
+.error {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  color: tomato;
+}
+
+@media (max-width: 1240px) {
+  .account__info {
+    grid-template-columns: minmax(200px, 1fr);
+    justify-items: center;
+  }
+
+  .account__transfers_title {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 880px) {
+  .acount__number,
+  .account__number span {
+  line-height: 25px;
+  font-size: 16px;
+}
+}
+
+@media (max-width: 768px) {
+  .account__title  {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 680px) {
+.account__chart_wrap {
+  width: 100%;
+  }
+}

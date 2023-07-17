@@ -1,0 +1,17 @@
+.footer {
+    background-color: #210B36;
+    padding: 50px 0;
+
+}
+
+.footer_container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer__text {
+        font-size: 12px;
+    }
+}

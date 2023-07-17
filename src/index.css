@@ -1,0 +1,110 @@
+@import "~normalize.css";
+
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('./assets/fonts/comfortaa-v40-cyrillic_latin-700.woff2')
+      format('woff2'),
+    url('./assets/fonts/comfortaa-v40-cyrillic_latin-700.woff')
+      format('woff');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+    url('./assets/fonts/nunito-v25-latin_cyrillic-regular.woff2') format('woff2'),
+    url('./assets/fonts/nunito-v25-latin_cyrillic-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local(''),
+    url('./assets/fonts/nunito-v25-latin_cyrillic-600.woff2') format('woff2'),
+    url('./assets/fonts/nunito-v25-latin_cyrillic-600.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+    url('./assets/fonts/nunito-v25-cyrillic_latin-700.woff2') format('woff2'),
+    url('./assets/fonts/nunito-v25-cyrillic_latin-700.woff') format('woff');
+}
+html {
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  line-height: 1;
+  min-width: 320px;
+  color: #fff;
+  font-family: Nunito, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative; /*чтобы header задать absolute*/
+}
+
+h1,
+h2,
+h3,
+p, ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background: linear-gradient(
+    87.4deg,
+    #2e00b1 -11.74%,
+    #8100bd 48.81%,
+    #a400be 113.27%
+  );
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+svg,
+img {
+  display: blok; /*избавимся от полоски пд картинкой*/
+  max-width: 100%; /*картинка подстроится по р-ру под блок*/
+  height: auto;
+}
